@@ -170,7 +170,7 @@ var users = [
     currentCity:'London',
     aboutMe:'007',
     posts:'London drink'
-  },  
+  },
   {
     username: 'Tony Stark',
     password: '654',
@@ -179,7 +179,7 @@ var users = [
     currentCity:'Washington DC',
     aboutMe:'Genius, Billionaire, Playboy, Philanthropist',
     posts:['heros.','scotch']
-  }, 
+  },
   {
     username: 'Lamar',
     password: '6540',
@@ -188,7 +188,7 @@ var users = [
     currentCity:'San Francisco',
     aboutMe:'Hello, I am currently a 24 age full stack developer from Pittsburgh, PA now living in the Bay are.',
     posts:'sick'
-  }, 
+  },
   {
     username: 'Jesse',
     password: '6540',
@@ -362,6 +362,7 @@ db.Post.remove({}, function(err, removedPosts){
             if(err){
               return console.log("error saving", err);
             }
+            process.exit();
             console.log('saved user',savedUser);
           });
         });
