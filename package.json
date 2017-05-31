@@ -30,7 +30,8 @@
     "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "prestart": "next build",
+    "start": "next start -p $PORT",
     "start-dev": "nf start -p 3000",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
